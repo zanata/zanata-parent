@@ -180,6 +180,8 @@
 		<checkstyle.suppressionsLocation />
 		<checkstyle.suppressionsFileExpression />
 
+      <findbugs.skip>false</findbugs.skip>
+
 		<reports-plugin.dependencyDetailsEnabled>false</reports-plugin.dependencyDetailsEnabled>
 		<reports-plugin.dependencyLocationsEnabled>false</reports-plugin.dependencyLocationsEnabled>
 
@@ -297,6 +299,7 @@
                 <artifactId>findbugs-maven-plugin</artifactId>
                 <version>2.5.2</version>
                 <configuration>
+                   <skip>${findbugs.skip}</skip>
                   <!-- NB: If we want to failOnError, we may need to
                        remove GuavaBetaDetector/library-detectors. -->
                   <failOnError>false</failOnError>
