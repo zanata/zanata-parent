@@ -458,10 +458,7 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <useFile>false</useFile>
-          <failIfNoTests>true</failIfNoTests>
-          <!-- TODO set to true?
           <failIfNoTests>false</failIfNoTests>
-           -->
         </configuration>
       </plugin>
 
