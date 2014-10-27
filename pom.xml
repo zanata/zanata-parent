@@ -202,6 +202,10 @@
     <reports-plugin.dependencyLocationsEnabled>false</reports-plugin.dependencyLocationsEnabled>
     <slf4j.version>1.7.5</slf4j.version>
     <victims.updates>daily</victims.updates>
+    <victims.db.driver>org.h2.Driver</victims.db.driver>
+    <victims.db.url>jdbc:h2:~/.victims/victims;MVCC=true;AUTO_SERVER=true</victims.db.url>
+    <victims.db.user>victims</victims.db.user>
+    <victims.db.pass>victims</victims.db.pass>
   </properties>
 
   <build>
@@ -448,6 +452,11 @@
                 off   : Disable the synchronization mechanism.
               -->
               <updates>${victims.updates}</updates>
+
+              <jdbcDriver>${victims.db.driver}</jdbcDriver>
+              <jdbcUrl>${victims.db.url}</jdbcUrl>
+              <jdbcUser>${victims.db.user}</jdbcUser>
+              <jdbcPass>${victims.db.pass}</jdbcPass>
             </rule>
           </rules>
         </configuration>
