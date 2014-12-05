@@ -36,7 +36,7 @@
 
     <module name="MethodParamPad"/>
 
-    <!-- TODO enable and fix violations: -->
+    <!-- TODO enable, pending https://github.com/checkstyle/checkstyle/issues/300 -->
     <!--<module name="NeedBraces"/>-->
 
     <module name="ParenPad"/>
@@ -56,14 +56,11 @@
       <property name="option" value="same"/>
     </module>
 
-    <!-- TODO enable and fix violations: -->
-    <!--<module name="TrailingComment"/>-->
+    <module name="TrailingComment"/>
 
     <module name="WhitespaceAfter"/>
 
-    <!-- TODO enable and fix violations: -->
-    <!--<module name="WhitespaceAround">-->
-    <!--</module>-->
+    <module name="WhitespaceAround"/>
   </module>
 
   <!-- Miscellaneous other checks.                   -->

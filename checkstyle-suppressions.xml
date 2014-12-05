@@ -18,4 +18,8 @@
   <suppress checks="FileTabCharacter" files="/src/test/.*\.(xml|po|pot)$" />
   <suppress checks="JavadocMethodCheck|JavadocTypeCheck" files="\.java$" />
   <suppress checks="MagicNumberCheck" files="Test\.java$" />
+  <!-- TODO fix violations and remove this: -->
+  <suppress checks="TrailingComment" files="/zanata-war/src/" />
+  <!-- TODO fix violations and remove this: -->
+  <suppress checks="WhitespaceAround" files="/zanata-war/src/" />
 </suppressions>
