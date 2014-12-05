@@ -33,6 +33,27 @@
         value="warning"/>
     </module>
 -->
+
+    <!--
+      Right brace on the same line as the next token, eg:
+      <code>
+        } catch (IOException e)
+      </code>
+
+      or:
+      <code>
+        } else if (someFlag) {
+      </code>
+    -->
+    <module name="RightCurly">
+      <property name="option" value="same"/>
+      <property name="tokens" value="
+        LITERAL_TRY, LITERAL_CATCH, LITERAL_FINALLY,
+        LITERAL_IF, LITERAL_ELSE,
+        CLASS_DEF, METHOD_DEF, CTOR_DEF,
+        LITERAL_FOR, LITERAL_WHILE, LITERAL_DO,
+        STATIC_INIT, INSTANCE_INIT"/>
+    </module>
   </module>
 
   <!-- Miscellaneous other checks.                   -->

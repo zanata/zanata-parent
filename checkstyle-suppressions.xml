@@ -7,6 +7,8 @@
 <suppressions>
   <suppress checks=".*" files=".*(compressed.*\.js|min\.js|\.js\.map|\.yml|\.patch)" />
   <suppress checks=".*" files=".*(\.eot|\.gif|\.ico|\.png|\.ttf|\.woff|\.svg)" />
+  <suppress checks=".*" files=".*(\.orig)" />
+  <suppress checks=".*" files=".*/gwt-unitCache-.*" />
   <!-- Zanata-SPA files -->
   <suppress checks=".*" files=".*/src/main/webapp/app/.*(\.json|locales|\.js|\.css)" />
   <!-- Ignore old Liquibase changelogs -->
