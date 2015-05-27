@@ -849,7 +849,17 @@
         </property>
       </activation>
       <build>
-
+        <plugins>
+          <plugin>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <configuration>
+              <compilerArgs>
+                <arg>-Werror</arg>
+                <arg>-Xlint:-options</arg>
+              </compilerArgs>
+            </configuration>
+          </plugin>
+        </plugins>
       </build>
       <properties>
         <dupfind.skip>false</dupfind.skip>
