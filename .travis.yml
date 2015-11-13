@@ -12,9 +12,8 @@ language: java
 # See http://docs.travis-ci.com/user/languages/java/#Dependency-Management
 install: /bin/true
 
+# openjdk8 is not available for jdk_switcher yet
 jdk:
-  - openjdk7
-  - oraclejdk7
   - oraclejdk8
 
 matrix:
