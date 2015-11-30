@@ -150,6 +150,7 @@
       <organization>Red Hat</organization>
       <organizationUrl>http://www.redhat.com/</organizationUrl>
       <roles>
+        <role>packager</role>
         <role>tester</role>
       </roles>
       <timezone>10</timezone>
@@ -161,7 +162,7 @@
     Version of java compiler used for building. (Specified as major.minor,
     as used by javac -source and -target).
     -->
-    <required.java>1.7</required.java>
+    <required.java>1.8</required.java>
     <!--
       Version of Java used for runtime (major.minor) and for bytecode
       generation. Should correspond with animal.sniffer.signature.
