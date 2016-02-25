@@ -446,6 +446,7 @@
               <banPluginRepositories>true</banPluginRepositories>
               <allowedRepositories combine.children="append">
                 <allowedRepository>sonatype-nexus-snapshots</allowedRepository>
+                <allowedRepository>okapi-cloudbees-snapshot</allowedRepository>
               </allowedRepositories>
             </requireNoRepositories>
             <requireUpperBoundDeps />
