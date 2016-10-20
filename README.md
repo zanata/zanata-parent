@@ -11,3 +11,4 @@ Find out about Zanata here: http://zanata.org/
 ***
 
 
+Simply holds the parent pom inherited by other Zanata modules.
